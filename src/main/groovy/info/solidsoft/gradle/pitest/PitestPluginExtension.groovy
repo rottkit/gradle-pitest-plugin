@@ -54,6 +54,8 @@ class PitestPluginExtension {
     BigDecimal timeoutFactor
     Integer timeoutConstInMillis
     Integer maxMutationsPerClass
+    Boolean fullMutationMatrix // new in PIT 1.4.3
+
     /**
      * JVM arguments to use when PIT launches child processes
      *

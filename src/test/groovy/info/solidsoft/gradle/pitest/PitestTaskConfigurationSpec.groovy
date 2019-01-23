@@ -73,7 +73,8 @@ class PitestTaskConfigurationSpec extends BasicProjectBuilderSpec implements Wit
                           'features',
                           'historyInputLocation',
                           'historyOutputLocation',
-                          'pluginConfiguration'
+                          'pluginConfiguration',
+                          'fullMutationMatrix'
             ]
     }
 }
