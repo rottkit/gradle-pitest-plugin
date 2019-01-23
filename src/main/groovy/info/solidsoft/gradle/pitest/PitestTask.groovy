@@ -202,6 +202,9 @@ class PitestTask extends JavaExec {
     @Optional
     Boolean fullMutationMatrix
 
+    @Input
+    @Optional
+    Boolean skipFailingTests
 
     @Override
     void exec() {
@@ -258,6 +261,7 @@ class PitestTask extends JavaExec {
         map['maxSurviving'] = getMaxSurviving()?.toString()
         map['features'] = getFeatures()?.join(',')
         map['fullMutationMatrix'] = getFullMutationMatrix()?.toString()
+        map['skipFailingTests'] = getSkipFailingTests()?.toString()
         map.putAll(prepareMapWithClasspathConfiguration())
         map.putAll(prepareMapWithIncrementalAnalysisConfiguration())
 

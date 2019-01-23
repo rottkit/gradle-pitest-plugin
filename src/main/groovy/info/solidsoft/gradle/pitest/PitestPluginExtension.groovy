@@ -55,6 +55,7 @@ class PitestPluginExtension {
     Integer timeoutConstInMillis
     Integer maxMutationsPerClass
     Boolean fullMutationMatrix // new in PIT 1.4.3
+    Boolean skipFailingTests // new in PIT 1.4.4
 
     /**
      * JVM arguments to use when PIT launches child processes

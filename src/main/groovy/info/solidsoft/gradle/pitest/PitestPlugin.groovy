@@ -151,6 +151,7 @@ class PitestPlugin implements Plugin<Project> {
             maxSurviving = { extension.maxSurviving }
             features = { extension.features }
             fullMutationMatrix = { extension.fullMutationMatrix }
+            skipFailingTests = { extension.skipFailingTests }
         }
 
         project.afterEvaluate {

@@ -74,7 +74,8 @@ class PitestTaskConfigurationSpec extends BasicProjectBuilderSpec implements Wit
                           'historyInputLocation',
                           'historyOutputLocation',
                           'pluginConfiguration',
-                          'fullMutationMatrix'
+                          'fullMutationMatrix',
+                          'skipFailingTests'
             ]
     }
 }
