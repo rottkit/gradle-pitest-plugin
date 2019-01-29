@@ -251,7 +251,7 @@ class PitestTask extends JavaExec {
         map['sourceDirs'] = (getSourceDirs()*.path)?.join(',')
         map['detectInlinedCode'] = getDetectInlinedCode()?.toString()
         map['timestampedReports'] = getTimestampedReports()?.toString()
-        map['mutableCodePaths'] = (getMutableCodePaths()*.path)?.join(',')
+//        map['mutableCodePaths'] = (getMutableCodePaths()*.path)?.join(',')
         map['mutationThreshold'] = getMutationThreshold()?.toString()
         map['coverageThreshold'] = getCoverageThreshold()?.toString()
         map['mutationEngine'] = getMutationEngine()
